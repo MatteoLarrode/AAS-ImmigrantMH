@@ -1,0 +1,11 @@
+ipykernel
+numpy
+pandas
+datetime
+matplotlib
+seaborn
+tqdm
+statsmodels
+Jinja2
+tabulate
+tableone
