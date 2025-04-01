@@ -19,7 +19,6 @@ Where:
 - $Immigrant_i$ is a dummy variable for being an immigrant
 - $Immigrant_i \cdot Reason_{n,i}$ represents the interaction between immigrant status and migration reasons
 - $X_i$ is the vector of control variables (age, ethnicity, unemployment, education)
-- $\mu$ is the vector of corresponding coefficients
 - $\epsilon_i$ is the error term
 
 The “healthy immigrant effect” (HIE) refers to the observation that immigrants often dis- play better health outcomes, both physical and mental, than the native-born populations of their destination country (Kennedy et al., 2015; McDonald & Kennedy, 2004). This is likely due to selection on good health (*selectivity hypothesis*), favourable health behaviours (*cultural hypothesis*), and the tendency of less healthy immigrants to return to their birth country (*salmon bias*).
@@ -32,12 +31,11 @@ I add a nuance: compared to a voluntary immigrant, a refugee will have had more 
 
 ### Unhealthy Assimilation Effect
 
-**Model:** $MH_i = \alpha + \beta_1 Non\text{-}Recent_i + \sum_{k+1} Ethnicity_{k,i} + \sum_k (Non\text{-}Recent_i \cdot Ethnicity_{k,i}) + \mu X_i + \epsilon_i$
+**Model:** $MH_i = \alpha + \beta_1 Non\text{-}Recent_i + \sum \beta_{k+1} Ethnicity_{k,i} + \sum \gamma_k (Non\text{-}Recent_i \cdot Ethnicity_{k,i}) + \mu X_i + \epsilon_i$
 
 - $Non\text{-}Recent_i$ indicates the immigrant has lived in the UK for more than 15 years
-- $\beta_1 Non\text{-}Recent_i$ represents the effect of extended residency on mental health
-- $\sum_{k+1} Ethnicity_{k,i}$ represents the main effects of ethnicity
-- $\sum_k (Non\text{-}Recent_i \cdot Ethnicity_{k,i})$ represents the interaction between extended residency and ethnicity
+- $\sum \beta_{k+1} Ethnicity_{k,i}$ represents the main effects of ethnicity
+- $Non\text{-}Recent_i \cdot Ethnicity_{k,i}$ represents the interaction between extended residency and ethnicity
 
 The literature has reached a consensus that the healthy immigrant e↵ect deteriorates as immigrants assimilate, in Europe (Bousmah et al., 2019) and the North America (Antecol & Bedard, 2006; Kwak, 2018). This “unhealthy assimilation” is usually explained by processes including the adoption of unhealthy habits, acculturation stress, discrimination, and poor economic and social conditions (Ferrara et al., 2024).
 
