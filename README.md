@@ -1,36 +1,38 @@
-# Mental Health Disparities Among Immigrant and UK-Born Populations
+# Unpacking mental health disparities among immigrant and domestic-born populations in the UK
 
-This repository contains the code and analysis for a study investigating mental health disparities between immigrant and UK-born populations, and across immigrant sub-groups in the United Kingdom. The research uses data from wave 7 of the UK Household Longitudinal Study to assess the "healthy immigrant effect" and the hypothesized subsequent process of unhealthy assimilation.
+This repository contains the code and analysis for a study investigating mental health disparities between immigrant and UK-born populations, and across immigrant sub-groups in the United Kingdom. 
 
-## Research Overview
+## Abstract
+This study uses wave 7 of the UK Household Longitudinal Study to investigate mental health disparities between immigrant and UK-born populations, and across immigrant sub-groups. In turn, it assesses the “healthy immigrant effect” – tendency of recent immigrants to be healthier than the native-born – and the hypothesised subsequent process of unhealthy assimilation. Results from linear regressions used in this cross-sectional design reveal that recent immigrants do exhibit a mental health advantage over UK natives, which diminishes significantly for those who have lived in the UK for over 15 years. This study also addresses knowledge gaps left in the literature by the frequent aggregation of all immigrants into a single unit of analysis. I find no significant mental health disparities between immigrants with varying migration reasons, nor do I observe di↵erences in mental health decline across distinct ethnic groups.
 
-Addressing mental health needs has become a global public health priority, established as a prime objective within the United Nations Sustainable Development Agenda. With one in five adults in the UK reporting some evidence of depression or anxiety in 2022, understanding mental health disparities is crucial.
+## Hypotheses
 
-Immigrants have been found to be particularly at risk in many Western countries due to factors such as social exclusion, discrimination in the labor force, and difficulty accessing healthcare resources. As they increasingly drive population growth in the UK, understanding the determinants of immigrants' mental health challenges has become critical.
+### Healthy Immigrant Effect
+The “healthy immigrant effect” (HIE) refers to the observation that immigrants often dis- play better health outcomes, both physical and mental, than the native-born populations of their destination country (Kennedy et al., 2015; McDonald & Kennedy, 2004). This is likely due to selection on good health (*selectivity hypothesis*), favourable health behaviours (*cultural hypothesis*), and the tendency of less healthy immigrants to return to their birth country (*salmon bias*).
 
-## Key Research Questions
+**H1:** Immigrants exhibit better mental health than UK-born individuals (HIE).
 
-This study examines:
-1. Whether immigrants exhibit better mental health than UK-born individuals (Healthy Immigrant Effect)
-2. If mental health differs among immigrant sub-groups based on migration reasons
-3. Whether immigrants' mental health deteriorates over time (Unhealthy Assimilation Effect)
-4. If the deterioration in mental health varies by ethnic background
+I add a nuance: compared to a voluntary immigrant, a refugee will have had more chances to be exposed to intense stressors, such as trauma or bad hygiene in camps, which deterio- rate mental health (van de Wiel et al., 2021). The Understanding Society survey unfortunately does not contain data on refugees, but it includes immigrants’ reasons for migrating. This variable can act as a proxy for the voluntary/refugee divide because it captures key elements of migration context that influence exposure to stressors.
 
-## Methodology
+**H2:** Immigrants who migrated because they did not feel safe in their country of birth have worse mental health than those who moved for education or work.
 
-- **Data Source**: Wave 7 of the UK Household Longitudinal Study (UKHLS), collected 2015-2017
-- **Outcome Variable**: SF-12 Mental Component Summary (MCS) score (range 0-100, higher scores indicate better mental health)
-- **Independent Variables**: Nativity status, recency of immigration, reason for migration, ethnicity
-- **Controls**: Age, sex, education, unemployment
-- **Analysis**: Linear regression models with survey weights
+### Unhealthy Assimilation Effect
+The literature has reached a consensus that the healthy immigrant e↵ect deteriorates as immigrants assimilate, in Europe (Bousmah et al., 2019) and the North America (Antecol & Bedard, 2006; Kwak, 2018). This “unhealthy assimilation” is usually explained by processes including the adoption of unhealthy habits, acculturation stress, discrimination, and poor economic and social conditions (Ferrara et al., 2024).
+
+**H3:** Non-recent immigrants display lower mental health levels than recent migrants.
+
+In the UK, many stressors disproportionately impact people from minority ethnic backgrounds.
+
+**H4:** The deterioration in mental health between recent and non-recent immigrants is stronger for those from minority ethnic backgrounds than for White immigrants.
 
 ## Key Findings
 
 ### Healthy Immigrant Effect
 
+![Figure: Healthy Immigrant Effect](figures/table2.png)
+
 Recent immigrants (≤15 years in UK) exhibit significantly better mental health than UK-born individuals (+2.8 points on the normalized 0-100 scale), supporting the healthy immigrant effect hypothesis.
 
-![Figure: Healthy Immigrant Effect](./figures/healthy_immigrant_effect.png)
 
 ### Migration Reasons and Mental Health
 
