@@ -12,7 +12,7 @@ This study uses wave 7 of the UK Household Longitudinal Study to investigate men
 
 ### Healthy Immigrant Effect
 
-**Model:** $MH_i = \alpha + \beta_1 Immigrant_i + \sum_n (Immigrant_i \cdot Reason_{n,i}) + \mu X_i + \epsilon_i$
+**Model:** $MH_i = \alpha + \beta_1 Immigrant_i + \sum \gamma_n (Immigrant_i \cdot Reason_{n,i}) + \mu X_i + \epsilon_i$
 
 Where:
 - $MH_i$ is the mental health score for individual $i$
