@@ -2,6 +2,9 @@
 
 This repository contains the code and analysis for a study investigating mental health disparities between immigrant and UK-born populations, and across immigrant sub-groups in the United Kingdom. 
 
+## Full Paper
+For a complete discussion of the literature, methods, results, and implications, please refer to the [full paper](/AAS-ImmigrantMH.pdf) in this repository.
+
 ## Abstract
 This study uses wave 7 of the UK Household Longitudinal Study to investigate mental health disparities between immigrant and UK-born populations, and across immigrant sub-groups. In turn, it assesses the “healthy immigrant effect” – tendency of recent immigrants to be healthier than the native-born – and the hypothesised subsequent process of unhealthy assimilation. Results from linear regressions used in this cross-sectional design reveal that recent immigrants do exhibit a mental health advantage over UK natives, which diminishes significantly for those who have lived in the UK for over 15 years. This study also addresses knowledge gaps left in the literature by the frequent aggregation of all immigrants into a single unit of analysis. I find no significant mental health disparities between immigrants with varying migration reasons, nor do I observe di↵erences in mental health decline across distinct ethnic groups.
 
@@ -29,40 +32,20 @@ In the UK, many stressors disproportionately impact people from minority ethnic 
 
 ### Healthy Immigrant Effect
 
-![Figure: Healthy Immigrant Effect](figures/table2.png)
-
 Recent immigrants (≤15 years in UK) exhibit significantly better mental health than UK-born individuals (+2.8 points on the normalized 0-100 scale), supporting the healthy immigrant effect hypothesis.
-
-
-### Migration Reasons and Mental Health
 
 No significant differences in mental health were found among immigrants with varying migration reasons. Whether immigrants moved for work/education, family reasons, political safety, or simply wanting to live in the UK did not significantly impact their mental health upon arrival.
 
+![Figure: Healthy Immigrant Effect](figures/table2.png)
+
 ### Unhealthy Assimilation Effect
 
-Immigrants who have lived in the UK for over 15 years display significantly lower mental health scores than recent immigrants, supporting the unhealthy assimilation hypothesis.
+Immigrants who have lived in the UK for over 15 years display significantly lower mental health scores than recent immigrants, supporting the unhealthy assimilation hypothesis. This finding is robust across different thresholds for defining "recent" immigrants (from 10 to 25 years).
 
-![Figure: Unhealthy Assimilation Effect](./figures/unhealthy_assimilation.png)
+However, the study found no evidence that unhealthy assimilation varies by ethnicity. The mental health decline associated with longer UK residence was consistent across ethnic groups.
 
-This finding is robust across different thresholds for defining "recent" immigrants (from 10 to 25 years).
-
-### Ethnic Differences
-
-The study found no evidence that unhealthy assimilation varies by ethnicity. The mental health decline associated with longer UK residence was consistent across ethnic groups.
+![Figure: Unhealthy Assimilation Effect](figures/table3.png)
 
 ## Implications
 
-The findings challenge implicit assumptions regarding immigrants' health outcomes, which have led researchers to view their observed advantages as 'paradoxical'. The results highlight the need to tackle the well-documented challenges that restrict immigrants' access to mental healthcare, including discrimination, language barriers, and insufficient cultural sensitivity training for healthcare professionals.
-
-## Limitations
-
-- The data's inability to capture the experiences of refugees, who have been found to report mental health problems substantially more often than other migrants
-- The cross-sectional design limits the study's ability to disentangle the effects of assimilation from baseline differences between immigration cohorts
-
-## Full Paper
-
-For a complete discussion of methods, results, and implications, please refer to the [full paper](./Unpacking_mental_health_disparities.pdf) in this repository.
-
-## Code
-
-All code used in the data pre-processing, visualization, and analysis is available in this repository for transparency and replicability.
+The results of this study challenge (implicit) assumptions regarding immigrants’ health outcomes, which have led researchers to view their observed advantages as ‘paradoxical’. Most importantly, they highlight the need to tackle the well-documented challenges that restrict immigrants’ access to mental healthcare, including discrimination, language barriers, and insuffcient cultural sensitivity training for healthcare professionals (Ferrara et al., 2024).
