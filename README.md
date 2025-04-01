@@ -6,7 +6,7 @@ This repository contains the code and analysis for a study investigating mental 
 For a complete discussion of the literature, methods, results, and implications, please refer to the [full paper](/AAS-ImmigrantMH.pdf) in this repository.
 
 ## Abstract
-This study uses wave 7 of the UK Household Longitudinal Study to investigate mental health disparities between immigrant and UK-born populations, and across immigrant sub-groups. In turn, it assesses the “healthy immigrant effect” – tendency of recent immigrants to be healthier than the native-born – and the hypothesised subsequent process of unhealthy assimilation. Results from linear regressions used in this cross-sectional design reveal that recent immigrants do exhibit a mental health advantage over UK natives, which diminishes significantly for those who have lived in the UK for over 15 years. This study also addresses knowledge gaps left in the literature by the frequent aggregation of all immigrants into a single unit of analysis. I find no significant mental health disparities between immigrants with varying migration reasons, nor do I observe di↵erences in mental health decline across distinct ethnic groups.
+This study uses wave 7 of the UK Household Longitudinal Study to investigate mental health disparities between immigrant and UK-born populations, and across immigrant sub-groups. In turn, it assesses the “healthy immigrant effect” – tendency of recent immigrants to be healthier than the native-born – and the hypothesised subsequent process of unhealthy assimilation. Results from linear regressions used in this cross-sectional design reveal that recent immigrants do exhibit a mental health advantage over UK natives, which diminishes significantly for those who have lived in the UK for over 15 years. This study also addresses knowledge gaps left in the literature by the frequent aggregation of all immigrants into a single unit of analysis. I find no significant mental health disparities between immigrants with varying migration reasons, nor do I observe differences in mental health decline across distinct ethnic groups.
 
 ## Hypotheses
 
@@ -37,7 +37,7 @@ I add a nuance: compared to a voluntary immigrant, a refugee will have had more 
 - $\sum \beta_{k+1} Ethnicity_{k,i}$ represents the main effects of ethnicity
 - $Non\text{-}Recent_i \cdot Ethnicity_{k,i}$ represents the interaction between extended residency and ethnicity
 
-The literature has reached a consensus that the healthy immigrant e↵ect deteriorates as immigrants assimilate, in Europe (Bousmah et al., 2019) and the North America (Antecol & Bedard, 2006; Kwak, 2018). This “unhealthy assimilation” is usually explained by processes including the adoption of unhealthy habits, acculturation stress, discrimination, and poor economic and social conditions (Ferrara et al., 2024).
+The literature has reached a consensus that the healthy immigrant effect deteriorates as immigrants assimilate, in Europe (Bousmah et al., 2019) and the North America (Antecol & Bedard, 2006; Kwak, 2018). This “unhealthy assimilation” is usually explained by processes including the adoption of unhealthy habits, acculturation stress, discrimination, and poor economic and social conditions (Ferrara et al., 2024).
 
 **H3:** Non-recent immigrants display lower mental health levels than recent migrants.
 
