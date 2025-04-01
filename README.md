@@ -15,18 +15,44 @@ The “healthy immigrant effect” (HIE) refers to the observation that immigran
 
 **H1:** Immigrants exhibit better mental health than UK-born individuals (HIE).
 
+$MH_i = \alpha + \beta_1 Immigrant_i + \mu X_i + \epsilon_i$
+
+Where:
+- $MH_i$ is the mental health score for individual $i$
+- $Immigrant_i$ is a dummy variable for being an immigrant
+- $X_i$ is the vector of control variables (age, ethnicity, unemployment, education)
+- $\mu$ is the vector of corresponding coefficients
+- $\epsilon_i$ is the error term
+
 I add a nuance: compared to a voluntary immigrant, a refugee will have had more chances to be exposed to intense stressors, such as trauma or bad hygiene in camps, which deterio- rate mental health (van de Wiel et al., 2021). The Understanding Society survey unfortunately does not contain data on refugees, but it includes immigrants’ reasons for migrating. This variable can act as a proxy for the voluntary/refugee divide because it captures key elements of migration context that influence exposure to stressors.
 
 **H2:** Immigrants who migrated because they did not feel safe in their country of birth have worse mental health than those who moved for education or work.
+
+$MH_i = \alpha + \beta_1 Immigrant_i + \sum_n (Immigrant_i \cdot Reason_{n,i}) + \mu X_i + \epsilon_i$
+
+Where:
+- $Immigrant_i \cdot Reason_{n,i}$ represents the interaction between immigrant status and migration reasons
 
 ### Unhealthy Assimilation Effect
 The literature has reached a consensus that the healthy immigrant e↵ect deteriorates as immigrants assimilate, in Europe (Bousmah et al., 2019) and the North America (Antecol & Bedard, 2006; Kwak, 2018). This “unhealthy assimilation” is usually explained by processes including the adoption of unhealthy habits, acculturation stress, discrimination, and poor economic and social conditions (Ferrara et al., 2024).
 
 **H3:** Non-recent immigrants display lower mental health levels than recent migrants.
 
+$MH_i = \alpha + \beta_1 Non\text{-}Recent_i + \sum_{k+1} Ethnicity_{k,i} + \mu X_i + \epsilon_i$
+
+Where:
+- $Non\text{-}Recent_i$ indicates the immigrant has lived in the UK for more than 15 years
+- $\beta_1 Non\text{-}Recent_i$ represents the effect of extended residency on mental health
+- $\sum_{k+1} Ethnicity_{k,i}$ represents the main effects of ethnicity
+
 In the UK, many stressors disproportionately impact people from minority ethnic backgrounds.
 
 **H4:** The deterioration in mental health between recent and non-recent immigrants is stronger for those from minority ethnic backgrounds than for White immigrants.
+
+$MH_i = \alpha + \beta_1 Non\text{-}Recent_i + \sum_{k+1} Ethnicity_{k,i} + \sum_k (Non\text{-}Recent_i \cdot Ethnicity_{k,i}) + \mu X_i + \epsilon_i$
+
+Where:
+- $\sum_k (Non\text{-}Recent_i \cdot Ethnicity_{k,i})$ represents the interaction between extended residency and ethnicity
 
 ## Key Findings
 
